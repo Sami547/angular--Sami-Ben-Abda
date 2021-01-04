@@ -1,0 +1,44 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-liste-fac-affiche',
+  templateUrl: './liste-fac-affiche.component.html',
+  styleUrls: ['./liste-fac-affiche.component.css']
+})
+export class ListeFacAfficheComponent implements OnInit {
+
+
+
+
+
+  public universites: any[] = [
+    {
+      id: 1,
+      name: "ITBS",
+      fraisInscription: 400,
+      url: "https://itbs.tn/",
+      lieu:"Av. Dali Jezi, 8062 Nabeul, Tunisie",
+      tel:"99102302",
+      image :"https://i0.wp.com/itbs.tn/hojoseq/2020/04/logo_itbs_134x50.png?fit=134%2C50&ssl=1",
+    },
+
+    {
+      id: 2,
+      name: "esprit",
+      fraisInscription: 500,
+      url: "https://esprit.tn/",
+      lieu:" ZI Aéroport Charguia II– ariana Tunisie.",
+      tel:"99200301",
+      image :"https://d7ieeqxtzpkza.cloudfront.net/wp-content/uploads/2018/03/image_news_get-1.jpg",
+     
+      
+    },
+  ]
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
